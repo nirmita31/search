@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-26T19:52:55Z" name="Default suite" finished-at="2021-12-26T19:52:59Z" duration-ms="3402">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@7cbd9d24]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2021-12-26T19:52:55Z" name="Default test" finished-at="2021-12-26T19:52:59Z" duration-ms="3402">
+      <class name="com.testrunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.testrunner.TestRunner@7cbd9d24]" started-at="2021-12-26T19:52:55Z" name="setUpClass" finished-at="2021-12-26T19:52:55Z" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@7cbd9d24]" started-at="2021-12-26T19:52:55Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-26T19:52:59Z" duration-ms="3187" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search functionality test"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Amazon search]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)
+at com.pageobjectmodel.SearchPage.getSearchField(SearchPage.java:22)
+at com.stepdefination.SearchSteps.user_enter_the_item_on_search_field(SearchSteps.java:26)
+at ✽.User enter the item on search field "Qa testing"(file:///C:/Users/nirmi/eclipse-workspace/MasterMind10/CucumberFeature/Search.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.testrunner.TestRunner@7cbd9d24]" started-at="2021-12-26T19:52:59Z" name="tearDownClass" finished-at="2021-12-26T19:52:59Z" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.testrunner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
